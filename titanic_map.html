@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_367a0964179308875a9dffbb627f3565 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_367a0964179308875a9dffbb627f3565" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_367a0964179308875a9dffbb627f3565 = L.map(
+                "map_367a0964179308875a9dffbb627f3565",
+                {
+                    center: [50.797733333333326, -3.773633333333333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8d2b0b8419d3a812a80021a94c7ade3c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_367a0964179308875a9dffbb627f3565);
+        
+    
+            var marker_1491eb17a49f30b1e07ae735e0b8ecf8 = L.marker(
+                [49.6337, -1.6221],
+                {}
+            ).addTo(map_367a0964179308875a9dffbb627f3565);
+        
+    
+        var popup_47b01037cedc8edbcbb9a6cc5e34b465 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f995fb5a45c97e9f903ad718fd1c305f = $(`<div id="html_f995fb5a45c97e9f903ad718fd1c305f" style="width: 100.0%; height: 100.0%;">Cherbourg, France</div>`)[0];
+                popup_47b01037cedc8edbcbb9a6cc5e34b465.setContent(html_f995fb5a45c97e9f903ad718fd1c305f);
+            
+        
+
+        marker_1491eb17a49f30b1e07ae735e0b8ecf8.bindPopup(popup_47b01037cedc8edbcbb9a6cc5e34b465)
+        ;
+
+        
+    
+    
+            var marker_869b9a44d59e780a5b7dc228c8df0221 = L.marker(
+                [51.8498, -8.2944],
+                {}
+            ).addTo(map_367a0964179308875a9dffbb627f3565);
+        
+    
+        var popup_a783106fd25325fd717448cfdb1a90fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aee3c8a76d1aece3f9133cc73a69d1b0 = $(`<div id="html_aee3c8a76d1aece3f9133cc73a69d1b0" style="width: 100.0%; height: 100.0%;">Queenstown, Ireland</div>`)[0];
+                popup_a783106fd25325fd717448cfdb1a90fd.setContent(html_aee3c8a76d1aece3f9133cc73a69d1b0);
+            
+        
+
+        marker_869b9a44d59e780a5b7dc228c8df0221.bindPopup(popup_a783106fd25325fd717448cfdb1a90fd)
+        ;
+
+        
+    
+    
+            var marker_e0f62b4db30e103dfa71b5ed26a30a5c = L.marker(
+                [50.9097, -1.4044],
+                {}
+            ).addTo(map_367a0964179308875a9dffbb627f3565);
+        
+    
+        var popup_a2ea9e698d70e3d775a89a8d36e0ae5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a1c475a34c72fe30ff11fbc0f64949a = $(`<div id="html_2a1c475a34c72fe30ff11fbc0f64949a" style="width: 100.0%; height: 100.0%;">Southampton, UK</div>`)[0];
+                popup_a2ea9e698d70e3d775a89a8d36e0ae5e.setContent(html_2a1c475a34c72fe30ff11fbc0f64949a);
+            
+        
+
+        marker_e0f62b4db30e103dfa71b5ed26a30a5c.bindPopup(popup_a2ea9e698d70e3d775a89a8d36e0ae5e)
+        ;
+
+        
+    
+</script>
+</html>
