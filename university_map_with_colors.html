@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1ab5b2d5c23576b5dbd0c066c26fe5ed {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1ab5b2d5c23576b5dbd0c066c26fe5ed" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1ab5b2d5c23576b5dbd0c066c26fe5ed = L.map(
+                "map_1ab5b2d5c23576b5dbd0c066c26fe5ed",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8d44cd7c415c2dfe987360e25bc1aa4b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1ab5b2d5c23576b5dbd0c066c26fe5ed);
+        
+    
+            var marker_94722c949727096e1cf4d92489c614e9 = L.marker(
+                [42.3736, -71.1097],
+                {}
+            ).addTo(map_1ab5b2d5c23576b5dbd0c066c26fe5ed);
+        
+    
+            var icon_181fc112cd1a2301cf3711abc52309bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94722c949727096e1cf4d92489c614e9.setIcon(icon_181fc112cd1a2301cf3711abc52309bc);
+        
+    
+        var popup_3a8efdc586f606373eb79fb6960d63f0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5458f670d48b29eb77bba0457ee125ef = $(`<div id="html_5458f670d48b29eb77bba0457ee125ef" style="width: 100.0%; height: 100.0%;"><b>Harvard University, USA</b><br>Tuition: $50,000<br>Acceptance Rate: 5%</div>`)[0];
+                popup_3a8efdc586f606373eb79fb6960d63f0.setContent(html_5458f670d48b29eb77bba0457ee125ef);
+            
+        
+
+        marker_94722c949727096e1cf4d92489c614e9.bindPopup(popup_3a8efdc586f606373eb79fb6960d63f0)
+        ;
+
+        
+    
+    
+            var marker_d1926aa9bde90cbeac6066ca30584dd4 = L.marker(
+                [51.7548, -1.2544],
+                {}
+            ).addTo(map_1ab5b2d5c23576b5dbd0c066c26fe5ed);
+        
+    
+            var icon_15ded90aaa56817f1fb2e6c899a3baaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d1926aa9bde90cbeac6066ca30584dd4.setIcon(icon_15ded90aaa56817f1fb2e6c899a3baaa);
+        
+    
+        var popup_e7731d675433f30d75ef9ea403545869 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9640bccffb434ea391bc7799621e4fde = $(`<div id="html_9640bccffb434ea391bc7799621e4fde" style="width: 100.0%; height: 100.0%;"><b>University of Oxford, UK</b><br>Tuition: £9,000-£12,000<br>Acceptance Rate: 17%</div>`)[0];
+                popup_e7731d675433f30d75ef9ea403545869.setContent(html_9640bccffb434ea391bc7799621e4fde);
+            
+        
+
+        marker_d1926aa9bde90cbeac6066ca30584dd4.bindPopup(popup_e7731d675433f30d75ef9ea403545869)
+        ;
+
+        
+    
+    
+            var marker_72d96546bcb3b7d6a33c0503cff73fdc = L.marker(
+                [35.7131, 139.7629],
+                {}
+            ).addTo(map_1ab5b2d5c23576b5dbd0c066c26fe5ed);
+        
+    
+            var icon_56d6e1328f2164eb6ae5c5c3d5cbb683 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72d96546bcb3b7d6a33c0503cff73fdc.setIcon(icon_56d6e1328f2164eb6ae5c5c3d5cbb683);
+        
+    
+        var popup_68516dd1ac5bd7dc3446f1863990a0de = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_584332d07e8d1bd45b5a3880f38b9d60 = $(`<div id="html_584332d07e8d1bd45b5a3880f38b9d60" style="width: 100.0%; height: 100.0%;"><b>University of Tokyo, Japan</b><br>Tuition: ¥535,800<br>Acceptance Rate: 23%</div>`)[0];
+                popup_68516dd1ac5bd7dc3446f1863990a0de.setContent(html_584332d07e8d1bd45b5a3880f38b9d60);
+            
+        
+
+        marker_72d96546bcb3b7d6a33c0503cff73fdc.bindPopup(popup_68516dd1ac5bd7dc3446f1863990a0de)
+        ;
+
+        
+    
+    
+            var marker_753b303395231e731bbefbdaadd87c66 = L.marker(
+                [-33.8888, 151.1939],
+                {}
+            ).addTo(map_1ab5b2d5c23576b5dbd0c066c26fe5ed);
+        
+    
+            var icon_a5b5193b6409da49beeaa5ccab69d896 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_753b303395231e731bbefbdaadd87c66.setIcon(icon_a5b5193b6409da49beeaa5ccab69d896);
+        
+    
+        var popup_6d64e8e82c6b37993b32239db274463e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e9ea00b3611babb3957e9f9955887b87 = $(`<div id="html_e9ea00b3611babb3957e9f9955887b87" style="width: 100.0%; height: 100.0%;"><b>University of Sydney, Australia</b><br>Tuition: AUD 37,000<br>Acceptance Rate: 30%</div>`)[0];
+                popup_6d64e8e82c6b37993b32239db274463e.setContent(html_e9ea00b3611babb3957e9f9955887b87);
+            
+        
+
+        marker_753b303395231e731bbefbdaadd87c66.bindPopup(popup_6d64e8e82c6b37993b32239db274463e)
+        ;
+
+        
+    
+    
+            var marker_de27bd634035b7c193003b5320230509 = L.marker(
+                [-33.9572, 18.4605],
+                {}
+            ).addTo(map_1ab5b2d5c23576b5dbd0c066c26fe5ed);
+        
+    
+            var icon_618014faa4b5ea5845f6e3dc04901a10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_de27bd634035b7c193003b5320230509.setIcon(icon_618014faa4b5ea5845f6e3dc04901a10);
+        
+    
+        var popup_6c29df16d6fd76277f0b2601bd5b3a50 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_af3ebb5dadecc20846939846a377e898 = $(`<div id="html_af3ebb5dadecc20846939846a377e898" style="width: 100.0%; height: 100.0%;"><b>University of Cape Town, South Africa</b><br>Tuition: ZAR 100,000<br>Acceptance Rate: 18%</div>`)[0];
+                popup_6c29df16d6fd76277f0b2601bd5b3a50.setContent(html_af3ebb5dadecc20846939846a377e898);
+            
+        
+
+        marker_de27bd634035b7c193003b5320230509.bindPopup(popup_6c29df16d6fd76277f0b2601bd5b3a50)
+        ;
+
+        
+    
+</script>
+</html>
